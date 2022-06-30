@@ -1,0 +1,63 @@
+npx create-react-app mystreamingapp
+cd mystreamingapp
+amplify init
+	project
+	env
+yarn add aws-amplify @aws-amplify/ui-react react-router-dom react-player
+amplify add auth
+amplify add api
+amplify push --y
+
+
+GraphQL endpoint: https://v2habjukobak3oofxqd65arvmi.appsync-api.us-east-1.amazonaws.com/graphql
+GraphQL API KEY: da2-3ydtgkmutjezdjxdikuvnshruq
+
+
+GraphQL endpoint: https://x6ro2glwz5ajnfx6gnfu5gmzom.appsync-api.us-east-1.amazonaws.com/graphql
+GraphQL API KEY: da2-3prp3n3fkvbmvcu5q26i7vhh6y
+
+
+Server: rtmps://7d2872a69781.global-contribute.live-video.net:443/app/
+Stream Key: sk_us-east-1_qaHIBDuLM84F_p2DnB8a6VyVziZReL95LPLOZgmkldJ
+
+
+Server: rtmps://7d2872a69781.global-contribute.live-video.net:443/app/
+Stream Key: sk_us-east-1_olmb0cDn5JCF_TBeWuvjzLhJ5hVz4fTUOcmCbxn0JdG
+
+PlaybackURL: https://7d2872a69781.us-east-1.playback.live-video.net/api/video/v1/us-east-1.304693500122.channel.ezcaYJzW7vZT.m3u8
+
+
+aws management console
+	interactive video service
+		create channel
+			give a channel name
+			default configuration
+			stream configuration
+			live stream
+	live-coding a twitch-like video streaming video platform in react
+		npx create-react-app mystreamingapp
+		
+		amplify init
+			react
+			src
+			build
+			aws profile
+			profile defailt
+		
+		cd streamingapp
+			yarn add aws-amplify @aws-amplify/ui-react \
+				react-router-dom react-player 
+			
+		amplify add auth
+			us
+		amplify add api
+			api name mystreamingapp
+			
+		amplify push -y
+		
+		npm start
+		
+		
+
+		
+	   

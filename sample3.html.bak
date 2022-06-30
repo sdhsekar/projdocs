@@ -1,0 +1,19 @@
+<html>
+<body>
+<input type="text" id="place" list="places">
+<datalist id="places">
+    <option data-value="WVC">503-882-1212</option>
+    <option data-value="HAM">612-883-1414</option>
+    <option data-value="WON">317-445-8585</option>
+</datalist>
+<br><br><br><br><br><br>
+<input type="text" id="fax">
+</body>
+<script>
+    document.querySelector('input').addEventListener('input', function () {
+        var val = document.querySelector('input').data-value;
+        faxNum = document.querySelectorAll('option[value="' + val + '"]')[0].innerHTML;
+        document.querySelector('#fax').value = faxNum;
+    });
+</script>
+</html>

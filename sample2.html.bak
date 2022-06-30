@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+$(document).ready(function() {
+    $('button').click(function() {
+        var value = $('input').val();
+        console.log($('#list-professor [value="' + value + '"]').data('value'));
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<label>Professor</label><input type="text" list="list-professor" name="professor_id">
+<datalist id="list-professor">
+   <select>
+      <option data-value="1" value="Roberto"></option>
+      <option data-value="2" value="Rosana"></option>
+      <option data-value="3" value="Romualdo"></option>
+   </select>
+</datalist>
+<button>Enviar</button>
+</body>
+<script>
+
+</script>
+</html>

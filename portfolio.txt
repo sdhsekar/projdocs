@@ -1,0 +1,61 @@
+Projects
+	Web App
+		LakeSide
+		Streaming
+		Up Coming
+			Crowd Funding
+	Mob App
+		Restaurant App  (Complete Nov,2021-Feb,2022)
+		Pakwaan Smart Inventry  (Mar - Apl,2022)
+		Foodpage (Delivery App)  (May - Till Date)
+		Foodpage (E-Pos) (May, 2022 Process)
+		
+	
+Tasks Assignment
+	
+	
+	
+	
+Web Site
+https://lakesidemedicaldiagnostics.com/
+https://newvision.ge/geo/
+
+
+Wordpress
+https://elements.envato.com/deliciko-restaurant-wordpress-theme-MSUQ5JH
+https://elements.envato.com/fleurdesel-hotel-booking-wordpress-theme-G98HM4E
+
+
+SEO
+https://www.discmakers.com/templates/digipaks.asp
+
+
+
+Template for crowd fund raising 
+	Donars Fund raising
+		https://xgenious.com/laravel/fundorex/
+	General
+		https://preview.codecanyon.net/item/fundme-crowdfunding-platform/full_screen_preview/18276382?_ga=2.42615904.454155044.1655710757-771801461.1654852099
+	
+
+
+------------------------------------------------------
+
+Crowd funding 
+	web/mob app & api
+
+Grocery 
+	web/mob app & api
+
+
+
+
+
+
+------------------------
+E24DUH1XE7F3CG
+d3ca60x5ga9bta.cloudfront.net
+arn:aws:cloudfront::304693500122:distribution/E24DUH1XE7F3CG
+create-roylae-usa.s3.us-east-1.amazonaws.com
+create-roylae-usa.s3.us-east-1.amazonaws.com
+

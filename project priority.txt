@@ -1,0 +1,19 @@
+Create Royale
+	Streaming
+		Aws
+		Vonage
+
+
+master
+	front-end (client)
+admin-master
+	admin page 
+streaming
+	client
+	
+	
+node
+	react js
+	vonage streaming (video)
+	socket
+	

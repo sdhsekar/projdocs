@@ -1,0 +1,7 @@
+projects
+	similar (with in a month)
+		doccure (Doctor appointments) (Web,Mobile App and API)
+		Streaming Channel (Web,Mobile App and API)
+		Shopping Cart (Web,Mobile App and API)
+
+

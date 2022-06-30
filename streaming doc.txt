@@ -1,0 +1,135 @@
+github.com/lcxfs1991
+
+
+live stream basics
+how to design
+what to build react
+
+what is video
+	content
+		image, audio, metadata
+	codec
+		video: H.264...
+		audio: AAC, HE-AAC
+	format
+		mp4, avi. flv
+	
+live stream. video, any connections?
+"live stream is to deliver video frome by frame from the server to the client"
+
+raw data (RTMP, WebRTC) => processing (watermark, filter, change face)  => compression (H.264, ACC) => stream push (FLV,RTMP,HLS) => stream play (Native H5)
+
+how can we play the vide source in web?
+	Flash +FLV 
+		low latency
+		Deprecated
+	Video + HLS
+		High latency
+		good compatibility im Mobile
+		
+	Video + MPEG-DASH
+		low la
+		bad com
+		
+		
+	Http Live Streaming (HLS)
+	
+		Control index File: m3u8
+			Video format: ts
+			Video Codec: H264
+			Audio codec: MP3,AAC,AC3
+		
+	Chrome Extension: Native HLS Playback
+	
+	how to design
+		full picture of the architecture
+		
+	how to design
+		mobile web app
+		in app
+		QQ/Wechat
+	Tencent Cloud Video solution
+	
+	
+	
+	Live Stream System
+		User
+			Loginasia
+			Userinfo
+			Charming point
+			level/rank
+		Room
+		Video
+			Live Stream
+			Record Stream
+		Message
+			Chat Room
+			Private Message
+			Server Push
+		Payment
+			Virtual Currency
+			Online payment
+		Gift
+			gifrts
+			Effect
+		Activity
+			entry Point
+		Monitor
+			pv,uv,perf,error,etc.
+			audit
+	
+	Focust on front-end part
+	
+
+What we use to build
+	react + redux + react-router
+	Webpack (require.ensure/system.import)
+
+	starter kit: steamer-react
+	
+	streamer-react
+		starter-kit
+		based on best practice of our team and react
+		(pure render, touch event, devtool...)
+		three template choice (simple, react, isomorphic)
+		
+	streamer-gulp, stream-vue, streamer-angular and so on...
+	
+	what to build in React
+		case 1: live room
+			huayang.qq.com
+		case 2: activity
+	github.com/lcxfs1991/livestream/
+	
+	Const Element (playback Control)
+		Play
+		Pause
+		Timer
+		Control Bar
+		Audio Bar
+		Audio
+	Live control extends playback control
+		Video tags
+			Live Room (HOC)
+			Playback (HOC)
+		
+		what is HOC
+			High Order Component
+		
+		HOW TO Control A VIDEO
+			m3u8
+			meta data + 1 video tag
+			listen to video events (canplay
+			
+			if m3u8, easy too
+			what if mp4, would u use only 1 link & 1 video tag
+			
+		how to load the stream as fast as can.
+		
+		size of group of pictures (GOP)
+		
+		
+		preact
+			react-redux + preact-router
+		
+		

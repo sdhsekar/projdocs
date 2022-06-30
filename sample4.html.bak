@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+$("#SelectColor").change(function(){
+  var el=$("#SelectColor")[0];  //used [0] is to get HTML DOM not jquery Object
+  var dl=$("#AllColors")[0];
+  if(el.value.trim() != ''){
+  var opSelected = dl.querySelector(`[value="${el.value}"]`);
+  alert(opSelected.getAttribute('id'));
+ }
+});
+function AddValue(el, dl){
+  if(el.value.trim() != ''){
+    var opSelected = dl.querySelector(`[value="${el.value}"]`);
+    var option = document.createElement("option");
+    option.value = opSelected.value;
+    option.text = opSelected.getAttribute('id');
+
+	document.getElementById('txt').value = option.text;
+  }
+}
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<input id="SelectColor" type="text" list="AllColors">
+<datalist id="AllColors">
+  <option id="1" value="Rea"></option>
+  <option id="2" value="dsaf"></option>
+  <option id="3" value="sdf"></option>
+  <option id="4" value="sdfddd"></option>
+</datalist>
+
+<button type="button" onclick="AddValue(document.getElementById('SelectColor'), document.getElementById('AllColors'));">Add</button>
+
+
+
+<input id="txt" type="text" >
+</body>
+</html>

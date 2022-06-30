@@ -1,0 +1,77 @@
+<html>
+<body>
+<label>
+ Animal:
+ <input name=animal list=animals>
+</label>
+<datalist id=animals>
+ <label>
+  or select from the list:
+  <select name=animal>
+   <option>1
+   <option>Cat
+   <option>Dog
+  </select>
+ </label>
+</datalist>
+
+
+<input list="answers" name="answer" id="answerInput">
+<datalist id="answers">
+  <option value="42">The answer</option>
+  <option value="43">The answer</option>
+  <option value="44">Another Answer</option>
+</datalist>
+<input type="hidden" name="answer" id="answerInput-hidden">
+<input type="button"  id="answerInput" onclick="ans();"
+	value="ok">
+
+
+Edit, updated
+
+Following Regent
+
+Try (v3)
+
+html
+
+<input id="selected" list="browsers" name="browser">
+<datalist id="browsers">
+    <option data-value="1" value="InternetExplorer"></option>
+    <option data-value="Firefox" value="2"></option>
+    <option data-value="Chrome" value="3"></option>
+    <option data-value="Opera" value="4"></option>
+    <option data-value="Safari" value="5"></option>
+</datalist>
+<input id="submit" type="submit">
+
+
+
+</body>
+<script>
+
+$(document).ready(function() {
+
+var data = {}; 
+$("#browsers option").each(function(i,el) {  
+   data[$(el).data("value")] = $(el).val();
+});
+// `data` : object of `data-value` : `value`
+console.log(data, $("#browsers option").val());
+
+
+    $('#submit').click(function()
+    {
+        var value = $('#selected').val();
+        alert($('#browsers [value="' + value + '"]').data('value'));
+    });
+});
+
+function ans(){
+var shownVal = document.getElementById("answerInput").value;
+var value2send = document.querySelector("#answers option[value='"+shownVal+"']").dataset.value;
+alert(value2send);
+}
+
+</script>
+</html>

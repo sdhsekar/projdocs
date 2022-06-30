@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function AddValue(Value, Text){
+
+//Value and Text are empty!
+
+var option=document.createElement("option");
+option.value=Value;
+option.text=Text;
+alert(Value);
+document.getElementById('Colors').appendChild(option);
+
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+
+<input id="SelectColor" type="text" list="AllColors">
+<datalist id="AllColors">
+  <option label="Red" value="1">
+  <option label="Yellow" value="2">
+  <option label="Green" value="3">
+  <option label="Blue" value="4">
+</datalist>
+
+<button type="button" onclick="AddValue(document.getElementById('AllColors').value, document.getElementById('AllColors').text);">Add</button>
+<select id="Colors" size="3" multiple></select>
+
+</body>
+</html>
